@@ -8,6 +8,7 @@ face_classifier = cv2.CascadeClassifier('./Harcascade/haarcascade_frontalface_de
 classifier=load_model('./Models/model_v_47.hdf5')
 class_labels={0: 'Angry', 1: 'Disgust', 2: 'Fear', 3: 'Happy', 4: 'Neutral', 5: 'Sad', 6: 'Surprise'}
 
+
 cap = cv2.VideoCapture(0)
 while True:
     ret,img = cap.read()
